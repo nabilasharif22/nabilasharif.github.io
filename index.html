@@ -2,83 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabila Sharif | Neuroscience Portfolio</title>
 
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #34495e;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            padding: 30px;
-            max-width: 800px;
-            margin: auto;
-            background-color: white;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #2c3e50;
-            color: white;
-            margin-top: 20px;
-        }
-    </style>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
-        <h1>Your Name</h1>
-        <p>Student | Researcher | Creator</p>
+        <h1>Nabila Sharif</h1>
+        <p>Neuroscience Student at Carnegie Mellon University</p>
     </header>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <main>
-
-
+    <!-- ABOUT -->
+    <section id="about" class="reveal">
         <h2>About Me</h2>
-        <p>
-            I am passionate about learning, creating, and exploring new ideas.
-            This site is a place to showcase my journey and connect with others.
-        </p>
-    </main>
+    
+        <div class="about-container">
+            <img src="profilephoto.jpg" alt="Profile photo">
+    
+            <div>
+                <p>
+                    Hi! I'm <strong>Nabila Sharif</strong>, a Neuroscience major at
+                    <strong>Carnegie Mellon University</strong>.
+                </p>
+    
+                <p>
+                    This website documents my process of learning web development from scratch
+                    while showcasing my academic and research work.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Research Projects</h3>
+            <p>Placeholder for a research project.</p>
+        </div>
+
+        <div class="project">
+            <h3>Web Development Project</h3>
+            <p>Portfolio website built with HTML, CSS, and JavaScript.</p>
+            <p>
+                View the code on
+                <a href="https://nabilasharif22.github.io/nabilasharif.github.io/" target="_blank">
+                    GitHub
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="reveal">
+        <h2>Contact</h2>
+
+        <p>Send me a message:</p>
+
+        <!-- REAL CONTACT FORM -->
+        <!-- Replace the action URL with your Formspree link -->
+        <form action="https://formspree.io/f/xxxxxx" method="POST">
+            <label>
+                Name
+                <input type="text" name="name" required>
+            </label>
+
+            <label>
+                Email
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Message
+                <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
     <footer>
         <p>© 2026 Nabila Sharif</p>
     </footer>
 
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
+<!-- The structure for the entire website was created ChatGTP using the prompt 
+ "I am going to tell you a bit about me and you are going to create personal website 
+ for me with css, html, and javascript. Be sure the code is readable and simple enough 
+ for beginners to understand." Then, pasting the general project requirements, I specified
+ that I wanted an html file, a css file, and a javascript file-->
